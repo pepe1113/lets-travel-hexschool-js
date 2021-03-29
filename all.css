@@ -1,0 +1,275 @@
+*,
+ ::before,
+ ::after {
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+
+body {
+    font-family: "Microsoft JhengHei";
+}
+
+
+/* addTicket-panel */
+
+.addTicket-area {
+    width: 920px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px;
+    opacity: 1;
+    margin: 120px auto 100px auto;
+    padding: 60px 95px;
+    display: flex;
+}
+
+.travelImage img {
+    display: block;
+    margin-bottom: 21px;
+}
+
+
+/* 表單區 */
+
+.formTitle {
+    color: #00807E;
+    font-size: 24px;
+    line-height: 33px;
+    border-bottom: 3px solid #00807E;
+    font-weight: bold;
+    padding-left: 25px;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.fa-plus {
+    font-size: 10px;
+    border-radius: 50%;
+    padding: 2px;
+    border: #00807E solid 2px;
+    position: absolute;
+    top: 5px;
+    left: 3px;
+}
+
+.form-item {
+    margin-top: 32px;
+}
+
+.form-item label {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 38px;
+    color: #00807E;
+    margin-right: 31px;
+}
+
+.form-item input {
+    width: 255px;
+    font-size: 16px;
+    color: #818A91;
+    background-color: #FAFAFA;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #00807E;
+}
+
+#region {
+    background-color: #FAFAFA;
+    color: #818A91;
+    width: 255px;
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #00807E;
+}
+
+#ticketDescription {
+    background-color: #FAFAFA;
+    color: #818A91;
+    width: 255px;
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #00807E;
+}
+
+.textbox {
+    display: flex;
+    align-items: top;
+}
+
+.addButton {
+    background: #00807E;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 10px 40px;
+    outline: none;
+    border: none;
+    margin-top: 24px;
+    float: right;
+}
+
+.addButton:hover {
+    background-color: #004E4D;
+    cursor: pointer;
+}
+
+.clearFloat {
+    clear: both;
+}
+
+
+/* mainContent */
+
+.mainContent {
+    background: #F7F7F7;
+    padding-bottom: 100px;
+}
+
+.regionSearch-area {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 920px;
+}
+
+#regionSearch {
+    font-size: 16px;
+    padding: 8px 12px;
+    color: #818A91;
+    width: 255px;
+    height: 38px;
+    margin-right: 30px;
+    margin-top: 56px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #CED4DA;
+}
+
+.searchNum {
+    line-height: 38px;
+    font-size: 16px;
+    color: #818A91;
+    margin-top: 56px;
+}
+
+#chart {
+    margin-top: 44px;
+}
+
+.ticketCard-area {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.ticketCard {
+    width: 330px;
+    margin: 15px;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    background-color: #fff;
+    position: relative;
+}
+
+.ticketCard-img img {
+    width: 100%;
+    height: 180px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.ticketCard-img a {
+    display: block;
+    overflow: hidden;
+}
+
+.ticketCard-img img:hover {
+    transform: scale(1.15);
+}
+
+.ticketcardRegion {
+    font-size: 20px;
+    color: #fff;
+    background-color: #64C3BF;
+    padding: 8px 20px;
+    position: absolute;
+    top: -9px;
+    left: 0;
+}
+
+.ticketcardStar {
+    font-size: 16px;
+    color: #fff;
+    background-color: #00807E;
+    padding: 5px 8px;
+    position: absolute;
+    left: 0;
+    top: 170px;
+}
+
+.ticketcard-content {
+    height: calc(100% - 180px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ticketcard-name {
+    color: #00807E;
+    font-size: 24px;
+    line-height: 45px;
+    font-weight: bold;
+    border-bottom: 2px solid #00807E;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.ticketcard-name:hover {
+    color: #64C3BF;
+}
+
+.ticketcard-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #818A91;
+    margin-bottom: 20px;
+}
+
+.ticketcard-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #00807E;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ticketcard-last {
+    line-height: 20px;
+}
+
+.fa-exclamation-circle {
+    margin-right: 6px;
+}
+
+.ticketcard-price {
+    font-size: 32px;
+    float: left;
+}
+
+.ticketcard-twd {
+    font-size: 16px;
+    line-height: 32px;
+    float: left;
+    margin-right: 4px;
+}
+
+.ticketcard-price::after {
+    clear: both;
+}
